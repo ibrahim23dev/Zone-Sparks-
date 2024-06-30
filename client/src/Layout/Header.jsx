@@ -1,24 +1,25 @@
 import React from "react";
-import Logo from "../assets/Logos.png";
+import Logo from "../assets/easyTax.png";
 import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
+import { BsSkipStartBtn } from "react-icons/bs";
 import DarkMode from "./Darkmood";
 
 const Menu = [
   {
     id: 1,
-    name: "Home",
+    name: "Services",
     link: "/#",
   },
   {
     id: 2,
-    name: "Products",
+    name: "Who We Can Help",
     link: "/products",
   },
   {
     id: 3,
-    name: "FAQs",
+    name: "Resources",
     link: "/faq",
   },
   {
@@ -26,6 +27,12 @@ const Menu = [
     name: "About Us",
     link: "/about",
   },
+  {
+    id: 5,
+    name: "Log in",
+    link: "/login",
+  }
+    
 ];
 
 const Header = ({ handleOrderPopup }) => {
@@ -37,7 +44,7 @@ const Header = ({ handleOrderPopup }) => {
           <div>
             <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
               <img src={Logo} alt="Logo" className="w-10" />
-              Kraftwerk
+              Easy-Tax Ltd
             </a>
           </div>
 
@@ -55,12 +62,12 @@ const Header = ({ handleOrderPopup }) => {
             {/* order button */}
             <button
               onClick={() => handleOrderPopup()}
-              className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
+              className="bg-gradient-to-r from-green-600 to-green-600 transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
             >
               <span className="group-hover:block hidden transition-all duration-200">
-                Order
+                Get Start
               </span>
-              <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
+              <BsSkipStartBtn className="text-xl text-white drop-shadow-sm cursor-pointer" />
             </button>
 
             {/* Darkmode Switch */}
@@ -79,9 +86,10 @@ const Header = ({ handleOrderPopup }) => {
                 href={data.link}
                 className="inline-block px-4 font-serif hover:text-primary duration-200"
               >
+                
                 {data.name}
               </a>
-            </li>
+              </li>
           ))}
         </ul>
       </div>

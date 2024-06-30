@@ -3,29 +3,29 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Image1 from "../assets/women.png";
-import Image2 from "../assets/laptop.png";
-import Image3 from "../assets/sale.png";
+import Image1 from "../assets/taxx.png";
+import Image2 from "../assets/taxxx.png";
+import Image3 from "../assets/Tax3.png";
 
 const ImageList = [
   {
     id: 1,
     img: Image1,
-    title: "Upto 50% off on all Men's Grocery",
+    title: "Stress-free tax returns. £169, all in",
     description:
-      "Discover fresh, flavorful groceries at unbeatable prices—nourish your family with quality produce, pantry staples, and delicious treats.",
+      "Self Assessment doesn’t need to be painful.Simple, fast, all online Sorted by an accredited accountant Filed in as little as 48 hours",
   },
   {
     id: 2,
     img: Image2,
-    title: "25% off on all Laptop & Phone",
+    title: "Stress-free tax returns. £169, all in",
     description:
       "Unleash productivity and creativity with our powerful, ultra-portable laptop—crafted for seamless performance and stunning visuals on-the-go.",
   },
   {
     id: 3,
     img: Image3,
-    title: "70% off on all Products Sale",
+    title: "Stress-free tax returns. £169, all in",
     description:
       "Get up to 70% off on all products! Don't miss out on these incredible savings. Shop now and save bi!",
   },
@@ -78,12 +78,6 @@ const Hero = ({ handleOrderPopup }) => {
                     data-aos-duration="500"
                     data-aos-delay="300"
                   >
-                    <button
-                      onClick={handleOrderPopup}
-                      className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
-                    >
-                      Order Now
-                    </button>
                   </div>
                 </div>
                 {/* image section */}
@@ -104,6 +98,40 @@ const Hero = ({ handleOrderPopup }) => {
             </div>
           ))}
         </Slider>
+
+        <div className="justify-center items-center text-center">
+       <div className=" z-50 flex items-center justify-center">
+        <div className="relative bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6 w-96 max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
+          {/* Header */}
+          <div className="flex items-center justify-between mb-6">
+            <h1 className="text-2xl font-semibold text-center w-full">Let's get started</h1>
+          </div>
+          {/* Form Section */}
+          <div>
+            <input
+              type="text"
+              placeholder="Your email address"
+              className="w-full rounded-md border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-4 py-2 mb-4"
+            />
+            <input
+              type="text"
+              placeholder="First Name"
+              className="w-full rounded-md border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-4 py-2 mb-6"
+                />
+                <input
+              type="text"
+              placeholder="Last Name"
+              className="w-full rounded-md border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-4 py-2 mb-6"
+            />
+            
+            <button className="w-full bg-blue-600 text-white py-2 rounded-md mb-6 hover:scale-105 transition-transform duration-200">
+              Start now
+            </button>
+          </div>
+        </div>
+      </div>
+
+        </div>
       </div>
     </div>
   );

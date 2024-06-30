@@ -6,28 +6,31 @@ const BannerImg = {
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-  height: "100%",
-  width: "100%",
+  height: "35%",
+  width: "85%",
 };
 
 const Subscribe = () => {
   return (
     <div
       data-aos="zoom-in"
-      className="mb-20 bg-gray-100 dark:bg-gray-800 text-white "
-      style={BannerImg}
+      className=" dark:bg-gray-800 text-white flex items-center justify-center"
+      style={{ height: "100vh" }}
     >
-      <div className="container backdrop-blur-sm py-10">
-        <div className="space-y-6 max-w-xl mx-auto">
-          <h1 className="text-2xl !text-center sm:text-left sm:text-4xl font-semibold">
-            Get Notified About New Products
-          </h1>
-          <input
-            data-aos="fade-up"
-            type="text"
-            placeholder="Enter your email"
-            className="w-full p-3"
-          />
+      <div
+        className="flex items-center justify-center p-4"
+        style={BannerImg}
+      >
+        <div className="max-w-md w-full mx-auto">
+          <div className="space-y-8 text-center">
+            <h2 className="text-xl sm:text-2xl font-semibold">
+              Let’s get your Self Assessment sorted today
+            </h2>
+            <p>Taxes as they should be done</p>
+            <button className="w-full bg-blue-600 text-white py-2 rounded-md mb-6 hover:scale-105 transition-transform duration-200">
+              Start now
+            </button>
+          </div>
         </div>
       </div>
     </div>

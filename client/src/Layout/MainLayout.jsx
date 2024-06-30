@@ -4,7 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Banner from '../Components/Banner';
 import AOS from 'aos'; // Import AOS library if not already imported
-import Popup from './Popup';
+import Popup from './GetStart';
 function MainLayout() {
   const [orderPopup, setOrderPopup] = useState(false);
 
@@ -27,7 +27,7 @@ function MainLayout() {
       <Header handleOrderPopup={handleOrderPopup} />
       <Banner handleOrderPopup={handleOrderPopup} />
       <Outlet />
-      <Footer />
+      <Footer/>
        <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
     </div>
   );

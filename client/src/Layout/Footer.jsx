@@ -1,5 +1,5 @@
 import React from "react";
-import footerLogo from "../assets/Logos.png";
+import footerLogo from "../assets/easyTax.png";
 import Banner from "../assets/footer-pattern.jpg";
 import {
   FaFacebook,
@@ -41,7 +41,7 @@ const FooterLinks = [
 const Footer = () => {
   return (
     <div>
-      <Subscribe/>
+      
        <div style={BannerImg} className="text-white">
       <div className="container">
         <div data-aos="zoom-in" className="grid md:grid-cols-3 pb-44 pt-5">
@@ -49,10 +49,10 @@ const Footer = () => {
           <div className="py-8 px-4">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
               <img src={footerLogo} alt="" className="max-w-[50px]" />
-              Kraftwerk
+              Easy-Tax Ltd
             </h1>
             <p>
-             Kraftwerk Technologies leads in renewable energy, focusing on solar and wind power solutions. Their cutting-edge approach maximizes energy efficiency and storage, driving global sustainability efforts for a cleaner, greener future.
+             Easy-Tax Ltd Technologies leads in renewable energy, focusing on solar and wind power solutions. Their cutting-edge approach maximizes energy efficiency and storage, driving global sustainability efforts for a cleaner, greener future.
             </p>
           </div>
 
